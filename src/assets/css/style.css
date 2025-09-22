@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #2d6eff;
+  --primary-color-dark: #0005a7;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-color-dark);
+  margin-bottom: 30px;
+}
+
+.senha-gerada {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border: 2px solid var(--primary-color-dark);
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.bot-cont {
+  text-align: center;
+}
+
+.botao {
+  background: var(--primary-color-dark);
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.botao:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+input[type='number'] {
+  padding: 8px 10px;
+  margin: 8px 0 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type='number']:focus {
+  border-color: var(--primary-color-dark);
+  box-shadow: 0 0 6px rgba(45, 110, 255, 0.3);
+  outline: none;
+}
+
+input[type='checkbox'] {
+  accent-color: var(--primary-color-dark); /* modern browsers */
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.container input {
+  margin-bottom: 10px;
+}
+
+.container h1,
+.senha-gerada,
+.bot-cont {
+  text-align: center;
+}
+
+.container input[type='number'],
+.container input[type='checkbox'] {
+  display: inline-block;
+}
